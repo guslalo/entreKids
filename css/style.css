@@ -6500,6 +6500,37 @@ button.close {
     -webkit-box-shadow: 0.3px 0.3px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0.3px 0.3px 2px 0 rgba(0, 0, 0, 0.2);
     border-left: 1px solid #dddddd; }
+  .header .boxPuntos {
+    height: 30px;
+    width: 95px;
+    border-radius: 2px;
+    background-color: #F3F3F3; }
+
+.boxPuntos {
+  padding: 0 7px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.09px;
+  line-height: 15px; }
+  .boxPuntos .img {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4px;
+    margin-right: 6px; }
+  .boxPuntos .boxTextos {
+    display: inline-block; }
+  .boxPuntos .puntos {
+    height: 12px;
+    width: 37px;
+    color: #4A4A4A; }
+  .boxPuntos .num {
+    height: 14px;
+    width: 49px;
+    color: #F56A80;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.11px;
+    line-height: 18px; }
 
 p.subtitulo {
   text-align: center;
@@ -6509,6 +6540,11 @@ p.subtitulo {
   width: 80%;
   margin: 0 auto 60px;
   line-height: 32px; }
+
+.promo {
+  height: 43px;
+  width: 1440px;
+  background-color: #19C6B7; }
 
 .pright {
   right: 0px !important;
