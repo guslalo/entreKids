@@ -10,6 +10,49 @@
 
 .header {
 	height: 70px;
+	padding:18px 0px;
+	box-sizing: border-box;
+	.logo {
+		cursor: pointer;
+	}
+	form {
+		width: 358px;
+		color: #BFBFBF;
+		box-shadow: none;
+		.buscar {
+			background: #F56A80;
+			width: 41px;
+			height: 34px;
+			text-align: center;
+			color: #ffffff;
+			padding: 0px;
+			line-height: 33px;
+			margin-left: -5px;
+			border-radius: 0 6px 6px 0;
+			border:#F56A80 1px solid;
+			
+			i {
+				line-height: 33px;
+			}
+		}
+		input {
+			font-size: 12px;
+			box-shadow: none;
+			border: none;
+		}
+	}
+	.inputActividades {
+		width: 189px;
+		box-shadow: 0.3px 0.3px 2px 0 rgba(0,0,0,0.2);
+	}
+	.inputUbicacion {
+		width: 117px;
+		margin-left: -5px;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		box-shadow: 0.3px 0.3px 2px 0 rgba(0,0,0,0.2);
+		border-left:1px solid #dddddd;
+	}
 }
 
 p {

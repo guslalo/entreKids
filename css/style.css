@@ -6459,7 +6459,47 @@ button.close {
   max-width: 970px; }
 
 .header {
-  height: 70px; }
+  height: 70px;
+  padding: 18px 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .header .logo {
+    cursor: pointer; }
+  .header form {
+    width: 358px;
+    color: #BFBFBF;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .header form .buscar {
+      background: #F56A80;
+      width: 41px;
+      height: 34px;
+      text-align: center;
+      color: #ffffff;
+      padding: 0px;
+      line-height: 33px;
+      margin-left: -5px;
+      border-radius: 0 6px 6px 0;
+      border: #F56A80 1px solid; }
+      .header form .buscar i {
+        line-height: 33px; }
+    .header form input {
+      font-size: 12px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: none; }
+  .header .inputActividades {
+    width: 189px;
+    -webkit-box-shadow: 0.3px 0.3px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0.3px 0.3px 2px 0 rgba(0, 0, 0, 0.2); }
+  .header .inputUbicacion {
+    width: 117px;
+    margin-left: -5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -webkit-box-shadow: 0.3px 0.3px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0.3px 0.3px 2px 0 rgba(0, 0, 0, 0.2);
+    border-left: 1px solid #dddddd; }
 
 p.subtitulo {
   text-align: center;
