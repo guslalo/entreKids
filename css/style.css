@@ -6635,7 +6635,8 @@ body {
   border-bottom: none !important; }
 
 .panel-body {
-  border-top: none !important; }
+  border-top: none !important;
+  padding: 0px 0px; }
 
 .panel-default > .panel-heading {
   color: #333;
