@@ -48,24 +48,131 @@
 					</form>
 				</div>
 				<div class="col-md-4">
+					
+					<div class="boxPerfil">
+						<p><span>(3)</span> María José
+							<i class="material-icons">
+								keyboard_arrow_down
+							</i>
+						</p>	
+					</div>
 					<div class="boxPuntos">
 						<div class="img"><img src="img/coin-01.svg"></div>
 						<div class="boxTextos">
-							<p class="num">999999</p>	
+							<p class="num">99999999</p>	
 							<p class="puntos">Puntos</p>	
 						</div>
 						
-					</div>
-					<div class="boxPerfil">
-
 					</div>			
 				</div>
 			</div>
 		</div>	   		
    </div>
    <div class="promo">
-	   as
+	   <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur.</p>
    </div>
+   <div class="container-fluid bggris">
+		<div class="container">
+			<div class="row">
+				<div class="left col-md-3 nplr">
+					<div class="tabs">
+						<ul>
+							<li class="activo">CALENDARIO</li>
+							<li>LISTA</li>
+							<li>mapa</li>
+						</ul>
+					</div>
+					<div class="horas">
+						<ul>
+							<li>6:00 AM</li>
+							<li>11:00 PM</li>
+						</ul>
+					</div>
+					<div slider id="slider-distance">
+						<div>
+						  <div inverse-left style="width:70%;"></div>
+						  <div inverse-right style="width:70%;"></div>
+						  <div range style="left:30%;right:40%;"></div>
+						  <span thumb style="left:30%;"></span>
+						  <span thumb style="left:60%;"></span>
+						  <div sign style="left:30%; display: none;">
+							<span id="value">30</span>
+						  </div>
+						  <div sign style="left:60%; display: none;" >
+							<span id="value">60</span>
+						  </div>
+						</div>
+						<input type="range" tabindex="0" value="30" max="100" min="0" step="1" oninput="
+						this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+						var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+						var children = this.parentNode.childNodes[1].childNodes;
+						children[1].style.width=value+'%';
+						children[5].style.left=value+'%';
+						children[7].style.left=value+'%';children[11].style.left=value+'%';
+						children[11].childNodes[1].innerHTML=this.value;" />
+					  
+						<input type="range" tabindex="0" value="60" max="100" min="0" step="1" oninput="
+						this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+						var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+						var children = this.parentNode.childNodes[1].childNodes;
+						children[3].style.width=(100-value)+'%';
+						children[5].style.right=(100-value)+'%';
+						children[9].style.left=value+'%';children[13].style.left=value+'%';
+						children[13].childNodes[1].innerHTML=this.value;" />
+					  </div>
+
+					  <div class="acordiones">
+						  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										UBICACIÓN 
+									</a>
+									<i class="material-icons">
+											keyboard_arrow_down
+										</i>
+								</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<label class="container2">Santiago
+										<input type="checkbox" checked="checked">
+										<span class="checkmark"></span>
+									</label>
+									<label class="container2">Providencia
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<label class="container2">Providencia
+												<input type="checkbox" checked="checked">
+												<span class="checkmark"></span>
+											</label>
+         						</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									EDAD
+									</a>
+								</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderi
+								</div>
+								</div>
+							</div>
+                        </div>
+					  </div>
+				</div>
+				<div class="col-md-9">9</div>
+			</div>
+		</div>
+   </div>
+  
 </div><!--wrap --> 
 
 
