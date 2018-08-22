@@ -85,7 +85,11 @@ $(window).load(function(){
 });
 
 $(document).ready(function(){
-	
+	 if($(".collapse").not(".in")){
+			$(".panel-default a").click(function(){
+				$(this).find("i").toggleClass("rotate");
+		});
+	 }
 
 
 	$("#obtener").on("click",function(){
